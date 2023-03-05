@@ -90,7 +90,7 @@ func main() {
 
 	r.HandleFunc("/movies", getMovies).Methods("GET")
 	r.HandleFunc("/movies/{id}", getMovie).Methods("GET")
-	r.HandleFunc("/createMovie", createMovie).Methods("POST")
+	r.HandleFunc("/movies", createMovie).Methods("POST")
 	r.HandleFunc("/movies/{id}", updateMovie).Methods("PUT")
 	r.HandleFunc("/movie/{id}", deleteMovie).Methods("DELETE")
 
